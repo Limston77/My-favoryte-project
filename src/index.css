@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: white;
+    color: #222;
+    font-family: "Lora", serif;
+    font-weight: 300;
+}
+
+.Wraper{
+    width: 1280px;
+    margin: 50px auto;
+}
+
+Header .logo{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+Header ul.nav{
+    float: right;
+    list-style: none;
+    
+}
+
+Header ul.nav li{
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 500ms ease ;
+}
+
+Header ul.nav li:hover{
+    opacity: 0.5;
+}
+
+Header .Presentation{
+    margin: 50px 0;
+    background: url("./img/Велики.jpg") no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color:lightslategrey;
+    position: relative;
+}
+
+Header .Presentation::after{
+    content: 'Движение - это отдых';
+    position: absolute;
+    top:50px;
+    left: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+Footer{
+    text-align: center;
+    top: 100px;
+}
